@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Positivus - Digital Agency</title>
+</head>
+<body>
+    <nav>
+        <input type="checkbox" id="check">
+        <label for="check" class="checkbtn">
+            <i class="fa fa-bars"></i>
+        </label>
+        <div class="logo">
+            <img src="/images/icon.png" alt="Positivus Logo">
+            <span>Positivus</span>
+        </div>
+        <ul>
+            <li><a class="active" href="#">About us</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Use Cases</a></li>
+            <li><a href="#">Pricing</a></li>
+            <li><a href="#">Blog</a></li>
+            <button class="quote-btn">Request a quote</button>
+        </ul>
+        
+    </nav>
+
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Navigating the </h1>
+             <h1>digital landscape </h1>
+             <h1>for success</h1>
+            <p>Our digital marketing agency helps businesses grow and succeed online through a range of services including SEO, PPC, social media marketing, and content creation.</p>
+            <button class="cta-btn">Book a consultation</button>
+        </div>
+        <div><img src="/images/Capture.PNG" alt="image" height="100%" width="100%"></div>
+    </section>
+
+    <div class="logo-bar">
+        <img src="/images/logo5.png" alt="Amazon">
+        <img src="/images/logo6.png" alt="Dribbble">
+        <img src="/images/logo1.png" alt="HubSpot">
+        <img src="/images/logo4.png" alt="Notion">
+        <img src="/images/logo2.png" alt="Netflix">
+        <img src="/images/logo3.png" alt="Zoom">
+    </div>
+
+    <section class="services">
+        <div class="service-header">
+            <div><h2>Services</h2></div>
+            <div><p>At our digital marketing agency, we offer a range of services to help businesses grow and succeed online. These services include:</p></div>
+        </div>
+    </section>
+    
+    <div class="services-grid">
+        <!-- SEO card -->
+        <div class="card card-ppc">
+            <div>
+                <h3>Search engine optimization</h3>
+                <a href="#">Learn more
+                    <span class="icon">→</span> <!-- Arrow icon -->
+                </a>
+            </div>
+            <img src="/images/img3.png" alt="SEO">
+        </div>
+    
+        <!-- PPC card -->
+        <div class="card card-seo">
+            <div>
+                <h3>Pay-per-click advertising</h3>
+                <a href="#">Learn more
+                    <span class="icon">→</span> <!-- Arrow icon -->
+                </a>
+            </div>
+            <img src="/images/img4.png" alt="PPC">
+        </div>
+    </div>
+    
+    
+    
+    <main>
+        <section class="faq-section">
+            <div class="faq-item">
+                <button class="faq-question">
+                    01 Consultation
+                    <span class="plus-sign">+</span>
+                </button>
+                <div class="faq-answer">
+                    <p>During the initial consultation, we will discuss your business goals and objectives, target audience, and current marketing efforts. This will allow us to understand your needs and tailor our services to best fit your requirements.</p>
+                </div>
+            </div>
+            
+            <div class="faq-item">
+                <button class="faq-question">
+                    02 Research and Strategy Development
+                    <span class="plus-sign">+</span>
+                </button>
+                <div class="faq-answer">
+                    <p>We conduct thorough market research and competitor analysis to create a customized strategy tailored to your business needs.</p>
+                </div>
+            </div>
+    
+            <div class="faq-item">
+                <button class="faq-question">
+                    03 Implementation
+                    <span class="plus-sign">+</span>
+                </button>
+                <div class="faq-answer">
+                    <p>We implement the strategy across all relevant channels, ensuring that your brand's message reaches the right audience.</p>
+                </div>
+            </div>
+    
+            <div class="faq-item">
+                <button class="faq-question">
+                    04 Monitoring and Optimization
+                    <span class="plus-sign">+</span>
+                </button>
+                <div class="faq-answer">
+                    <p>We continuously monitor the performance of the campaigns and make necessary adjustments to improve results.</p>
+                </div>
+            </div>
+    
+            <div class="faq-item">
+                <button class="faq-question">
+                    05 Reporting
+                    <span class="plus-sign">+</span>
+                </button>
+                <div class="faq-answer">
+                    <p>We provide detailed reports that outline the progress of your campaigns and the ROI achieved.</p>
+                </div>
+            </div>
+    
+            <div class="faq-item">
+                <button class="faq-question">
+                    06 Support
+                    <span class="plus-sign">+</span>
+                </button>
+                <div class="faq-answer">
+                    <p>We offer ongoing support to ensure that your marketing efforts continue to deliver results.</p>
+                </div>
+            </div>
+        </section>
+    </main>
+    
+    
+    <script>
+        document.querySelectorAll('.faq-question').forEach(item => {
+            item.addEventListener('click', function () {
+                const parent = this.parentElement;
+                parent.classList.toggle('active');
+                const answer = this.nextElementSibling;
+        
+                if (answer.style.maxHeight) {
+                    answer.style.maxHeight = null;
+                } else {
+                    answer.style.maxHeight = answer.scrollHeight + 'px';
+                }
+            });
+        });
+        
+    </script>
+    
+
+    <footer class="footer">
+        <div class="footer-container">
+          <!-- Footer Left Section: Title & Description -->
+          <div class="footer-left">
+            <h3>Site Title</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium modi culpa molestias quos consectetur nobis dicta perspiciatis, vitae unde ab..</p>
+          </div>
+          
+          <!-- Footer Center Section: Quick Links -->
+          <div class="footer-center">
+            <h4>Quick Links</h4>
+            <ul>
+              <li><a href="#">Home</a></li>
+              <li><a href="#">About Us</a></li>
+              <li><a href="#">Services</a></li>
+              <li><a href="#">Contact</a></li>
+            </ul>
+          </div>
+          
+          <!-- Footer Right Section: Social Icons -->
+          <div class="footer-right">
+            <h4>Follow Us</h4>
+            <div class="social-icons">
+              <a href="#"><img  class="fab fa-facebook-f"></</a>
+              <a href="#"><img  class="fab fa-twitter"></</a>
+              <a href="#"><img  class="fab fa-instagram"></</a>
+              <a href="#"><img  class="fab fa-linkedin-in"></</a>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Footer Bottom Section -->
+        <div class="footer-bottom">
+          <p>&copy; 2024 Positivus. All rights reserved.</p>
+        </div>
+      </footer>
+      
+
+</body>
+</html>
+
+
